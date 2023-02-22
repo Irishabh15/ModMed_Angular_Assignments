@@ -1,0 +1,60 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: fit-content;
+    padding: 20px 45px;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 8px;
+    box-shadow: 1px 2px 10px 0px;
+}
+
+
+.login-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 45px;
+    font-family: cursive;
+}
+
+label{
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+
+input{
+    margin-bottom: 35px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+}
+
+button{
+    margin: 15px 0;
+    padding: 6px 15px;
+    width: fit-content;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: 400;
+    border: 0;
+    border-radius: 3px;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button:active{
+    background-color: darkblue;
+}

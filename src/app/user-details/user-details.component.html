@@ -1,0 +1,46 @@
+<div class="userDetailsdiv">
+    <h2 class="userDetailsHead">Add New User</h2>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+
+        <!-- Full name field -->
+        <label for="Name">Name <i class="star">*</i></label>
+        <input type="text" name="fullname" id="Name" class="formField" ngModel required #fname="ngModel" autocomplete="off" >
+        <div>
+            <small *ngIf="fname.invalid && fname.touched">Full Name is required</small>
+        </div>
+
+
+        <!-- College name field -->
+        <label for="collegename">College Name <i class="optional">(Optional)</i></label>
+        <input type="text" name="cname" id="collegename" class="formField" ngModel autocomplete="off">
+
+
+        <!-- Degree field -->
+        <label for="degree">Degree <i class="star">*</i></label>
+        <select name="degreechoice" id="degree" class="formField" ngModel required #degree="ngModel">
+            <option value="B.Tech">B.Tech</option>
+            <option value="BBA">BBA</option>
+            <option value="BCA">BCA</option>
+            <option value="B.Pharma">B.Pharma</option>
+            <option value="MBA">MBA</option>
+            <option value="M.TECH">M.Tech</option>
+        </select>
+        <div class="small-div">
+            <small *ngIf="degree.invalid && degree.touched">Degree is required field</small>
+        </div>
+
+
+        <!-- Specialization field -->
+        <label for="specialization">Specializaion <i class="optional">(Optional)</i></label>
+        <textarea name="specialization" id="specialization" cols="30" rows="3" class="formField" ngModel></textarea>
+        
+
+        <!-- Buttons (submit and cancel) -->
+        <div class="btn-group">
+            <button type="submit" class="save" [disabled]="!myForm.valid" [ngClass]="myForm.valid==true? 'A': 'B'">SUBMIT</button>
+            <button class="cancel" (click)="clearFields()">CANCEL</button>
+        </div>
+    </form>
+</div>
+

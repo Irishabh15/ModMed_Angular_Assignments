@@ -1,0 +1,36 @@
+.div2{
+    background-color: beige;
+    margin: 25px auto;
+    width: 365px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.para{
+    background-color: beige;
+    margin: 25px auto;
+    width: 365px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+i{
+    font-weight: 600;
+}
+
+
+.user-info-para{
+    text-align: center;
+    font-family: system-ui;
+}
+
+
+img{
+    height: 70px;
+    width: 100px;
+}
+
+

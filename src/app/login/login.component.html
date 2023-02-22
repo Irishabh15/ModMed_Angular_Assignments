@@ -1,0 +1,17 @@
+<div class="login-page">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit(myLogin)" class="login-fields"  #myLogin="ngForm">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" ngModel #user="ngModel" autocomplete="off">
+
+        <label for="pass">Password</label>
+        <input type="text" name="pass" id="pass" ngModel #pass="ngModel" autocomplete="off">
+    
+
+    <div class="btn">
+        <button type="submit">Login</button>
+    </div>
+
+</form>
+</div>
+

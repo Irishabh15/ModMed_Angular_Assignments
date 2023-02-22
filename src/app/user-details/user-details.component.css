@@ -1,0 +1,104 @@
+/* margin: -6px 8px 18px 4px; */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+.userDetailsdiv{
+    background-color: skyblue;
+    /* width: fit-content;
+    height: fit-content; */
+    max-height: 635px;
+    width: 430px;
+    /* padding: 20px 60px; */
+    padding: 37px 55px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 10px 0px;
+}
+
+.userDetailsHead{
+    text-align: center;
+    font-family: math;
+    color: darkred;
+}
+
+.formField{
+    /* margin-bottom: 25px; */
+    margin: 0 4px;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+label{
+    margin: 10px 0;
+    margin-top: 30px;
+    font-family: math;
+    padding: 0 7px;
+    font-weight: 600;
+}
+
+.optional{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.star{
+    font-size: 18px;
+    color: red;
+}
+
+
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.save{
+    padding: 8px 15px;
+    background-color: palegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel{
+    padding: 8px 15px;
+    background-color: rgb(255, 101, 101);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.formField.ng-invalid.ng-touched{
+    border: red 2px solid;
+}
+
+/* .formField.ng-valid.ng-touched{
+    border: palegreen 2px solid;
+} */
+
+small{
+    color: red;
+    margin: 0 10px;
+    margin-bottom: 25px;
+}
+
+.A{
+    cursor: pointer;
+}
+
+.B{
+    cursor: auto;
+}
+
+textarea{
+    resize: none;
+}

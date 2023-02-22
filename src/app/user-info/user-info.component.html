@@ -1,0 +1,21 @@
+<div class="para" *ngIf="users.length==0; else elseBlock">
+    <p class="user-info-para">No User Added</p>
+</div>
+
+<ng-template #elseBlock>
+
+        <div class="div2" *ngFor="let user of users">
+            <div class="info">
+                <p>Name: <i>{{user.fullname}}</i></p>
+                <p>College: <i>{{user.collegename}}</i></p>
+                <p>Degree: <i>{{user.degree}}</i></p>
+                <p>Specialization: <i>{{user.specialization}}</i></p>
+            </div>
+            <div class="img">
+                <img src="../../assets/user_icon.png" alt="">
+            </div>
+        </div>
+        
+
+    
+</ng-template>
